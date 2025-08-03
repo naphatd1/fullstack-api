@@ -1,0 +1,67 @@
+{
+  "id": "this-house-is-the-best-env",
+  "name": "This House Is The Best - Environment",
+  "values": [
+    {
+      "key": "base_url",
+      "value": "http://localhost:8080/api",
+      "description": "Main API URL through Nginx proxy",
+      "enabled": true
+    },
+    {
+      "key": "direct_backend_url", 
+      "value": "http://localhost:4000/api",
+      "description": "Direct backend API URL",
+      "enabled": true
+    },
+    {
+      "key": "frontend_url",
+      "value": "http://localhost:8080",
+      "description": "Frontend URL",
+      "enabled": true
+    },
+    {
+      "key": "access_token",
+      "value": "",
+      "description": "JWT Access Token (auto-populated after login)",
+      "enabled": true
+    },
+    {
+      "key": "refresh_token",
+      "value": "",
+      "description": "JWT Refresh Token (auto-populated after login)",
+      "enabled": true
+    },
+    {
+      "key": "user_id",
+      "value": "",
+      "description": "Current user ID (auto-populated after login)",
+      "enabled": true
+    },
+    {
+      "key": "admin_email",
+      "value": "admin@example.com",
+      "description": "Admin user email for testing",
+      "enabled": true
+    },
+    {
+      "key": "admin_password",
+      "value": "admin123",
+      "description": "Admin user password for testing",
+      "enabled": true
+    },
+    {
+      "key": "user_email",
+      "value": "user@example.com",
+      "description": "Regular user email for testing",
+      "enabled": true
+    },
+    {
+      "key": "user_password",
+      "value": "user123",
+      "description": "Regular user password for testing",
+      "enabled": true
+    }
+  ],
+  "_postman_variable_scope": "environment"
+}
