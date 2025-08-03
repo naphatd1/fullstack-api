@@ -1,0 +1,31 @@
+name: Simple Test
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  hello-world:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        
+      - name: Hello World
+        run: |
+          echo "🎉 GitHub Actions is working!"
+          echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref }}"
+          echo "Event: ${{ github.event_name }}"
+          
+      - name: List files
+        run: |
+          echo "Files in repository:"
+          ls -la
+          
+      - name: Check workflows
+        run: |
+          echo "Workflow files:"
+          ls -la .github/workflows/
